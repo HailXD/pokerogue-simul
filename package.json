@@ -295,9 +295,7 @@
     "std-env": "^3.9.0",
     "strict-event-emitter": "^0.5.1",
     "string-width": "^5.1.2",
-    "string-width-cjs": "^4.2.3",
     "strip-ansi": "^6.0.1",
-    "strip-ansi-cjs": "^6.0.1",
     "strip-bom": "^3.0.0",
     "strip-json-comments": "^2.0.1",
     "strip-literal": "^3.0.0",
@@ -347,7 +345,6 @@
     "which": "^2.0.2",
     "why-is-node-running": "^2.3.0",
     "wrap-ansi": "^8.1.0",
-    "wrap-ansi-cjs": "^7.0.0",
     "wrappy": "^1.0.2",
     "ws": "^8.18.0",
     "xml-name-validator": "^5.0.0",
@@ -356,8 +353,7 @@
     "yallist": "^3.1.1",
     "yaml": "^2.7.1",
     "yargs": "^17.7.2",
-    "yargs-parser": "^21.1.1",
-    "yoctocolors-cjs": "^2.1.2"
+    "yargs-parser": "^21.1.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.27.0",
