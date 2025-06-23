@@ -922,12 +922,12 @@ export abstract class BattleAnim {
     this.srcLine = [userFocusX, userFocusY, targetFocusX, targetFocusY];
     this.dstLine = [userInitialX, userInitialY, targetInitialX, targetInitialY];
 
-    let r = anim?.frames.length ?? 0;
+    let r = anim?.frames?.length ?? 0;
     let f = 0;
 
     globalScene.tweens.addCounter({
       duration: getFrameMs(3),
-      repeat: anim?.frames.length ?? 0,
+      repeat: anim?.frames?.length ?? 0,
       onRepeat: () => {
         if (!f) {
           userSprite.setVisible(false);
