@@ -1,9 +1,10 @@
 {
-  "name": "poke-simul",
-  "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
+  "name": "pokemon-rogue-battle",
+  "private": true,
+  "version": "1.9.6",
+  "type": "module",
+  "scripts": {
+    "start": "vitest run --no-isolate --silent"
   },
   "dependencies": {
     "acorn": "^8.12.1",
@@ -327,11 +328,7 @@
     "yargs-parser": "^21.1.1",
     "yoctocolors-cjs": "^2.1.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "engines": {
+    "node": ">=22.0.0"
+  }
 }
