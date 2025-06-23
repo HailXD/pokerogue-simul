@@ -1,0 +1,613 @@
+{
+  "seed": "iWOd4X3uZtBNTU0RaI7kyxut",
+  "playTime": 45,
+  "gameMode": 0,
+  "party": [
+    {
+      "id": 1685389120,
+      "player": true,
+      "species": 837,
+      "formIndex": 0,
+      "abilityIndex": 2,
+      "shiny": false,
+      "variant": 0,
+      "pokeball": 0,
+      "level": 5,
+      "exp": 173,
+      "levelExp": 45,
+      "gender": 0,
+      "hp": 19,
+      "stats": [
+        19,
+        9,
+        13,
+        10,
+        11,
+        9
+      ],
+      "ivs": [
+        30,
+        30,
+        31,
+        30,
+        31,
+        30
+      ],
+      "nature": 5,
+      "moveset": [
+        {
+          "moveId": 33,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 108,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 229,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 891,
+          "ppUsed": 4,
+          "ppUp": 0,
+          "virtual": false
+        }
+      ],
+      "status": null,
+      "friendship": 56,
+      "metLevel": 5,
+      "metBiome": -1,
+      "metSpecies": 837,
+      "metWave": -1,
+      "luck": 0,
+      "pauseEvolutions": false,
+      "pokerus": false,
+      "usedTMs": [],
+      "evoCounter": 0,
+      "teraType": 5,
+      "isTerastallized": false,
+      "stellarTypesBoosted": [
+        9
+      ],
+      "mysteryEncounterPokemonData": null,
+      "fusionMysteryEncounterPokemonData": null,
+      "fusionLuck": 0,
+      "fusionTeraType": 0,
+      "boss": false,
+      "bossSegments": 0,
+      "summonData": {
+        "statStages": [
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "moveQueue": [],
+        "tags": [],
+        "abilitySuppressed": false,
+        "speciesForm": null,
+        "fusionSpeciesForm": null,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "types": [],
+        "addedType": null,
+        "illusion": null,
+        "illusionBroken": false,
+        "berriesEatenLast": [],
+        "moveHistory": [
+          {
+            "move": 891,
+            "targets": [
+              2
+            ],
+            "result": 1,
+            "virtual": false,
+            "turn": 1
+          },
+          {
+            "move": 891,
+            "targets": [
+              2
+            ],
+            "result": 1,
+            "virtual": false,
+            "turn": 2
+          },
+          {
+            "move": 891,
+            "targets": [
+              2
+            ],
+            "result": 1,
+            "virtual": false,
+            "turn": 1
+          },
+          {
+            "move": 891,
+            "targets": [
+              2
+            ],
+            "result": 1,
+            "virtual": false,
+            "turn": 2
+          }
+        ]
+      },
+      "battleData": {
+        "hitCount": 0,
+        "hasEatenBerry": false,
+        "berriesEaten": []
+      },
+      "customPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      },
+      "fusionCustomPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      }
+    },
+    {
+      "id": 4154508502,
+      "player": true,
+      "species": 137,
+      "formIndex": 0,
+      "abilityIndex": 0,
+      "passive": true,
+      "shiny": true,
+      "variant": 1,
+      "pokeball": 0,
+      "level": 6,
+      "exp": 216,
+      "levelExp": 0,
+      "gender": -1,
+      "hp": 25,
+      "stats": [
+        25,
+        14,
+        15,
+        17,
+        15,
+        11
+      ],
+      "ivs": [
+        28,
+        31,
+        31,
+        31,
+        31,
+        28
+      ],
+      "nature": 6,
+      "moveset": [
+        {
+          "moveId": 33,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 160,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 278,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 909,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        }
+      ],
+      "status": null,
+      "friendship": 56,
+      "metLevel": 5,
+      "metBiome": -1,
+      "metSpecies": 137,
+      "metWave": -1,
+      "luck": 2,
+      "pauseEvolutions": false,
+      "pokerus": false,
+      "usedTMs": [],
+      "evoCounter": 0,
+      "teraType": 0,
+      "isTerastallized": false,
+      "stellarTypesBoosted": [],
+      "mysteryEncounterPokemonData": null,
+      "fusionMysteryEncounterPokemonData": null,
+      "fusionLuck": 2,
+      "fusionTeraType": 0,
+      "boss": false,
+      "bossSegments": 0,
+      "summonData": {
+        "statStages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "moveQueue": [],
+        "tags": [],
+        "abilitySuppressed": false,
+        "speciesForm": null,
+        "fusionSpeciesForm": null,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "types": [],
+        "addedType": null,
+        "illusion": null,
+        "illusionBroken": false,
+        "berriesEatenLast": [],
+        "moveHistory": []
+      },
+      "battleData": {
+        "hitCount": 0,
+        "hasEatenBerry": false,
+        "berriesEaten": []
+      },
+      "customPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      },
+      "fusionCustomPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      }
+    },
+    {
+      "id": 3697142591,
+      "player": true,
+      "species": 207,
+      "formIndex": 0,
+      "abilityIndex": 0,
+      "shiny": false,
+      "variant": 0,
+      "pokeball": 0,
+      "level": 5,
+      "exp": 128,
+      "levelExp": 0,
+      "gender": 0,
+      "hp": 23,
+      "stats": [
+        23,
+        15,
+        17,
+        9,
+        13,
+        15
+      ],
+      "ivs": [
+        31,
+        29,
+        31,
+        30,
+        31,
+        31
+      ],
+      "nature": 3,
+      "moveset": [
+        {
+          "moveId": 40,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 28,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 731,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 615,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        }
+      ],
+      "status": null,
+      "friendship": 70,
+      "metLevel": 5,
+      "metBiome": -1,
+      "metSpecies": 207,
+      "metWave": -1,
+      "luck": 0,
+      "pauseEvolutions": false,
+      "pokerus": false,
+      "usedTMs": [],
+      "evoCounter": 0,
+      "teraType": 4,
+      "isTerastallized": false,
+      "stellarTypesBoosted": [],
+      "mysteryEncounterPokemonData": null,
+      "fusionMysteryEncounterPokemonData": null,
+      "fusionLuck": 0,
+      "fusionTeraType": 0,
+      "boss": false,
+      "bossSegments": 0,
+      "summonData": {
+        "statStages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "moveQueue": [],
+        "tags": [],
+        "abilitySuppressed": false,
+        "speciesForm": null,
+        "fusionSpeciesForm": null,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "types": [],
+        "addedType": null,
+        "illusion": null,
+        "illusionBroken": false,
+        "berriesEatenLast": [],
+        "moveHistory": []
+      },
+      "battleData": {
+        "hitCount": 0,
+        "hasEatenBerry": false,
+        "berriesEaten": []
+      },
+      "customPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      },
+      "fusionCustomPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      }
+    }
+  ],
+  "enemyParty": [
+    {
+      "id": 587525712,
+      "player": false,
+      "species": 506,
+      "formIndex": 0,
+      "abilityIndex": 0,
+      "shiny": false,
+      "variant": 0,
+      "pokeball": 0,
+      "level": 3,
+      "exp": 36,
+      "levelExp": 0,
+      "gender": 0,
+      "hp": 16,
+      "stats": [
+        16,
+        9,
+        8,
+        7,
+        8,
+        8
+      ],
+      "ivs": [
+        17,
+        16,
+        9,
+        27,
+        18,
+        16
+      ],
+      "nature": 12,
+      "moveset": [
+        {
+          "moveId": 33,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        },
+        {
+          "moveId": 43,
+          "ppUsed": 0,
+          "ppUp": 0,
+          "virtual": false
+        }
+      ],
+      "status": null,
+      "friendship": 50,
+      "metLevel": 3,
+      "metBiome": 0,
+      "metSpecies": 506,
+      "metWave": 3,
+      "luck": 0,
+      "pauseEvolutions": false,
+      "pokerus": false,
+      "usedTMs": [],
+      "evoCounter": 0,
+      "teraType": 0,
+      "isTerastallized": false,
+      "stellarTypesBoosted": [],
+      "mysteryEncounterPokemonData": null,
+      "fusionMysteryEncounterPokemonData": null,
+      "fusionLuck": 0,
+      "fusionTeraType": 0,
+      "boss": false,
+      "bossSegments": 0,
+      "summonData": {
+        "statStages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "moveQueue": [],
+        "tags": [],
+        "abilitySuppressed": false,
+        "speciesForm": null,
+        "fusionSpeciesForm": null,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "types": [],
+        "addedType": null,
+        "illusion": null,
+        "illusionBroken": false,
+        "berriesEatenLast": [],
+        "moveHistory": []
+      },
+      "battleData": {
+        "hitCount": 0,
+        "hasEatenBerry": false,
+        "berriesEaten": []
+      },
+      "customPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      },
+      "fusionCustomPokemonData": {
+        "spriteScale": -1,
+        "hitsRecCount": null,
+        "ability": -1,
+        "passive": -1,
+        "nature": -1,
+        "types": []
+      }
+    }
+  ],
+  "modifiers": [
+    {
+      "player": true,
+      "typeId": "TEMP_STAT_STAGE_BOOSTER",
+      "typePregenArgs": [
+        5
+      ],
+      "args": [
+        5,
+        5,
+        4
+      ],
+      "stackCount": 1,
+      "className": "TempStatStageBoosterModifier"
+    }
+  ],
+  "enemyModifiers": [
+    {
+      "player": false,
+      "typeId": "BASE_STAT_BOOSTER",
+      "typePregenArgs": [
+        2
+      ],
+      "args": [
+        587525712,
+        2
+      ],
+      "stackCount": 1,
+      "className": "BaseStatModifier"
+    }
+  ],
+  "arena": {
+    "biome": 0,
+    "weather": null,
+    "terrain": null,
+    "playerTerasUsed": 0,
+    "tags": []
+  },
+  "pokeballCounts": {
+    "0": 5,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "money": 1000,
+  "score": 21,
+  "waveIndex": 3,
+  "battleType": 0,
+  "trainer": null,
+  "gameVersion": "1.9.6",
+  "timestamp": 1750574080672,
+  "challenges": [],
+  "mysteryEncounterType": -1,
+  "mysteryEncounterSaveData": {
+    "encounteredEvents": [],
+    "encounterSpawnChance": 3,
+    "queuedEncounters": []
+  },
+  "playerFaints": 0
+}
