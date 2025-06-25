@@ -3,6 +3,7 @@ import GameManager from "#test/testUtils/gameManager";
 import Phaser from "phaser";
 import type BattleScene from "#app/battle-scene";
 import { BiomeId } from "#enums/biome-id";
+import fs from "fs";
 
 let phaserGame: Phaser.Game;
 let game: GameManager;
@@ -11,6 +12,8 @@ let scene: BattleScene;
 phaserGame = new Phaser.Game({
     type: Phaser.HEADLESS,
 });
+
+fs.mkdirSync('output', { recursive: true });
 
 it.only("hunt", async () => {
     const generateSeed = (length: number): string => {
@@ -27,10 +30,9 @@ it.only("hunt", async () => {
 
     while (!lugiaFound) {
         seed = generateSeed(26);
-        const wavesToHunt = [50, 100, 150];
+        const wavesToHunt = [50];
 
         for (const wave of wavesToHunt) {
-            console.log(`Hunting wave ${wave} with seed ${seed}`);
             game = new GameManager(phaserGame);
             scene = game.scene;
             game.override.seed(seed);
@@ -42,7 +44,8 @@ it.only("hunt", async () => {
             const pokemon = scene.currentBattle.enemyParty.map(p => p.name).join(',');
 
             if (pokemon.toLowerCase().includes("lugia")) {
-                console.log(`Lugia found at wave ${wave} with seed: ${seed}`);
+                const outputPath = 'output/lugia.txt';
+                fs.appendFileSync(outputPath, `${seed} ${pokemon} ${wave}\n`);
                 lugiaFound = true;
                 break;
             }
