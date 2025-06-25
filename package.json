@@ -4,7 +4,9 @@
   "version": "1.9.6",
   "type": "module",
   "scripts": {
-    "start": "vitest run --no-isolate --silent"
+    "start": "vitest run --no-isolate",
+    "main": "vitest run --no-isolate test/main.test.ts",
+    "hunt": "vitest run --no-isolate test/hunt.test.ts"
   },
   "dependencies": {
     "@material/material-color-utilities": "^0.3.0",
