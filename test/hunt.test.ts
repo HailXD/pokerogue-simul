@@ -15,38 +15,60 @@ phaserGame = new Phaser.Game({
 
 fs.mkdirSync('output', { recursive: true });
 
-it.only("hunt", async () => {
-    const generateSeed = (length: number): string => {
-        const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        let result = "";
-        for (let i = 0; i < length; i++) {
-            result += chars.charAt(Math.floor(Math.random() * chars.length));
-        }
-        return result;
-    };
+const generateSeed = (length: number): string => {
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let result = "";
+    for (let i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+};
 
-    let lugiaFound = false;
+let pokemonToHunt = ["Lugia"];
+pokemonToHunt = pokemonToHunt.map(name => name.toLowerCase());
+const biomesToHunt: (keyof typeof BiomeId)[] = ["SEA"];
+
+const paths = JSON.parse(fs.readFileSync("test/paths.json", "utf-8"));
+const wavesAndBiomesToHunt: { wave: number; biome: BiomeId }[] = [];
+
+it.only("hunt", async () => {
+    for (const waveRange in paths) {
+        const biomesInWave = paths[waveRange] as (keyof typeof BiomeId)[];
+        for (const biome of biomesToHunt) {
+            if (biomesInWave.includes(biome)) {
+                const wave = parseInt(waveRange.split("-")[1]);
+                const biomeId = BiomeId[biome];
+                if (biomeId) {
+                    wavesAndBiomesToHunt.push({ wave, biome: biomeId });
+                }
+            }
+        }
+    }
+    console.log(wavesAndBiomesToHunt);
+    let pokemonFound = false;
     let seed = "";
 
-    while (!lugiaFound) {
+    while (!pokemonFound) {
         seed = generateSeed(26);
-        const wavesToHunt = [50];
 
-        for (const wave of wavesToHunt) {
+        for (const { wave, biome } of wavesAndBiomesToHunt) {
             game = new GameManager(phaserGame);
             scene = game.scene;
             game.override.seed(seed);
             game.override.startingWave(wave);
-            game.override.startingBiome(BiomeId.SEA);
+            game.override.startingBiome(biome);
 
             await game.runToMysteryEncounter();
 
-            const pokemon = scene.currentBattle.enemyParty.map(p => p.name).join(',');
+            const pokemonNames = scene.currentBattle.enemyParty.map(p => p.name);
+            const foundPokemon = pokemonNames.find(name =>
+                pokemonToHunt.some(huntName => name.toLowerCase().includes(huntName))
+            );
 
-            if (pokemon.toLowerCase().includes("lugia")) {
-                const outputPath = 'output/lugia.txt';
-                fs.appendFileSync(outputPath, `${seed} ${pokemon} ${wave}\n`);
-                lugiaFound = true;
+            if (foundPokemon) {
+                const outputPath = `output/${foundPokemon}.txt`;
+                fs.appendFileSync(outputPath, `${seed} ${foundPokemon} ${wave} ${BiomeId[biome]}\n`);
+                pokemonFound = true;
                 break;
             }
 
@@ -54,5 +76,5 @@ it.only("hunt", async () => {
         }
     }
 
-    expect(lugiaFound).toBe(true);
+    expect(pokemonFound).toBe(true);
 }, 30000000);
