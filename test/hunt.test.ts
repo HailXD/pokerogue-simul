@@ -44,7 +44,6 @@ it.only("hunt", async () => {
             }
         }
     }
-    console.log(wavesAndBiomesToHunt);
     let pokemonFound = false;
     let seed = "";
 
@@ -66,7 +65,7 @@ it.only("hunt", async () => {
             );
 
             if (foundPokemon) {
-                const outputPath = `output/${foundPokemon}.txt`;
+                const outputPath = `output/hunt.txt`;
                 fs.appendFileSync(outputPath, `${seed} ${foundPokemon} ${wave} ${BiomeId[biome]}\n`);
                 pokemonFound = true;
                 break;
