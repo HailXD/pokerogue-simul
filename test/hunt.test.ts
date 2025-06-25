@@ -37,7 +37,6 @@ it.only("hunt", async () => {
         for (const biome of biomesToHunt) {
             if (biomesInWave.includes(biome)) {
                 const wave = parseInt(waveRange.split("-")[1]);
-                if (wave > 60) continue;
                 const biomeId = BiomeId[biome];
                 if (biomeId) {
                     wavesAndBiomesToHunt.push({ wave, biome: biomeId });
