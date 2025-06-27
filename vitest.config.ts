@@ -38,11 +38,6 @@ export default defineProject(({ mode }) => ({
     trace: true,
     restoreMocks: true,
     watch: false,
-    coverage: {
-      provider: "istanbul" as const,
-      reportsDirectory: "coverage" as const,
-      reporters: ["text-summary", "html"],
-    },
     name: "main",
     include: ["./test/**/*.{test,spec}.ts"],
   },
