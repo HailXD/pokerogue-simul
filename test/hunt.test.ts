@@ -24,9 +24,9 @@ const generateSeed = (length: number): string => {
     return result;
 };
 
-let pokemonToHunt = ["Lugia"];
+let pokemonToHunt = ["gliscor"];
 pokemonToHunt = pokemonToHunt.map(name => name.toLowerCase());
-const biomesToHunt: (keyof typeof BiomeId)[] = ["SEA"];
+const biomesToHunt: (keyof typeof BiomeId)[] = ["BADLANDS"];
 
 const paths = JSON.parse(fs.readFileSync("test/paths.json", "utf-8"));
 const wavesAndBiomesToHunt: { wave: number; biome: BiomeId }[] = [];
@@ -58,7 +58,6 @@ it.only("hunt", async () => {
             game.override.startingBiome(biome);
 
             await game.runToMysteryEncounter();
-
             const pokemonNames = scene.currentBattle.enemyParty.map(p => p.name);
             const foundPokemon = pokemonNames.find(name =>
                 pokemonToHunt.some(huntName => name.toLowerCase().includes(huntName))

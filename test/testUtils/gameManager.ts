@@ -55,8 +55,8 @@ import { MockFetch } from "#test/testUtils/mocks/mockFetch";
 import PhaseInterceptor from "#test/testUtils/phaseInterceptor";
 import TextInterceptor from "#test/testUtils/TextInterceptor";
 import { AES, enc } from "crypto-js";
-import fs from "node:fs";
-import { expect, vi } from "vitest";
+// import fs from "node:fs";
+// import { expect, vi } from "vitest";
 
 /**
  * Class to manage the game state and transitions between phases.
@@ -129,7 +129,7 @@ export default class GameManager {
     // Disables Mystery Encounters on all tests (can be overridden at test level)
     // this.override.mysteryEncounterChance(0);
 
-    global.fetch = vi.fn(MockFetch) as any;
+    // global.fetch = vi.fn(MockFetch) as any;
   }
 
   /**
@@ -218,7 +218,7 @@ export default class GameManager {
     });
 
     // This will consider all battle entry dialog as seens and skip them
-    vi.spyOn(this.scene.ui, "shouldSkipDialogue").mockReturnValue(true);
+    // vi.spyOn(this.scene.ui, "shouldSkipDialogue").mockReturnValue(true);
 
     if (overrides.OPP_HELD_ITEMS_OVERRIDE.length === 0) {
       this.removeEnemyHeldItems();
@@ -267,9 +267,9 @@ export default class GameManager {
     );
 
     await this.phaseInterceptor.run(EncounterPhase);
-    if (!isNullOrUndefined(encounterType)) {
-      expect(this.scene.currentBattle?.mysteryEncounter?.encounterType).toBe(encounterType);
-    }
+    // if (!isNullOrUndefined(encounterType)) {
+    //   expect(this.scene.currentBattle?.mysteryEncounter?.encounterType).toBe(encounterType);
+    // }
   }
 
   /**
@@ -438,17 +438,18 @@ export default class GameManager {
    * @returns A promise that resolves with a tuple containing a boolean indicating success and an integer status code.
    */
   async importData(path): Promise<[boolean, number]> {
-    const saveKey = "x0i2O7WRiANTqPmZ";
-    const dataRaw = fs.readFileSync(path, { encoding: "utf8", flag: "r" });
-    let dataStr = AES.decrypt(dataRaw, saveKey).toString(enc.Utf8);
-    dataStr = this.scene.gameData.convertSystemDataStr(dataStr);
-    const systemData = this.scene.gameData.parseSystemData(dataStr);
-    const valid = !!systemData.dexData && !!systemData.timestamp;
-    if (valid) {
-      await updateUserInfo();
-      await this.scene.gameData.initSystem(dataStr);
-    }
-    return updateUserInfo();
+    // const saveKey = "x0i2O7WRiANTqPmZ";
+    // const dataRaw = fs.readFileSync(path, { encoding: "utf8", flag: "r" });
+    // let dataStr = AES.decrypt(dataRaw, saveKey).toString(enc.Utf8);
+    // dataStr = this.scene.gameData.convertSystemDataStr(dataStr);
+    // const systemData = this.scene.gameData.parseSystemData(dataStr);
+    // const valid = !!systemData.dexData && !!systemData.timestamp;
+    // if (valid) {
+    //   await updateUserInfo();
+    //   await this.scene.gameData.initSystem(dataStr);
+    // }
+    // return updateUserInfo();
+    return [false, 0];
   }
 
   /**
@@ -539,7 +540,7 @@ export default class GameManager {
   async setTurnOrder(order: BattlerIndex[]): Promise<void> {
     await this.phaseInterceptor.to(TurnStartPhase, false);
 
-    vi.spyOn(this.scene.phaseManager.getCurrentPhase() as TurnStartPhase, "getSpeedOrder").mockReturnValue(order);
+    // vi.spyOn(this.scene.phaseManager.getCurrentPhase() as TurnStartPhase, "getSpeedOrder").mockReturnValue(order);
   }
 
   /**

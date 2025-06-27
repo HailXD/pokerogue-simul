@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vitest run --no-isolate --silent",
     "main": "vitest run --silent --no-isolate test/main.test.ts",
-    "hunt": "vitest run --silent --no-isolate test/hunt.test.ts"
+    "hunt": "vitest run --silent --no-isolate test/hunt.test.ts",
+    "dev": "vite"
   },
   "dependencies": {
     "@material/material-color-utilities": "^0.3.0",
